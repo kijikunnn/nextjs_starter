@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc",
+    "eslint": "eslint --fix --ext .jsx,.js,.tsx,.ts .",
     "lint": "next lint",
     "test": "jest --env=jsdom --verbose",
-    "checks": "yarn lint && yarn type-check"
+    "checks": "yarn lint && yarn eslint"
   },
   "jest": {
     "testPathIgnorePatterns": [
@@ -38,16 +38,22 @@
     "@types/jest": "^26.0.24",
     "@types/node": "^16.3.3",
     "@types/react": "^17.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
     "autoprefixer": "^10.3.1",
-    "axios": "^0.21.1",
     "babel-jest": "^27.0.6",
-    "eslint": "7.31.0",
+    "eslint": "^7.31.0",
     "eslint-config-next": "11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-tailwindcss": "^1.14.1",
     "jest": "^27.0.6",
-    "jest-css-modules": "^2.1.0",
-    "msw": "^0.32.0",
     "postcss": "^8.3.5",
-    "swr": "^0.5.6",
+    "prettier": "^2.3.2",
     "tailwindcss": "^2.2.4",
     "typescript": "^4.3.5"
   }
