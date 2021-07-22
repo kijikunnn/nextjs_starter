@@ -1,8 +1,17 @@
-import { AppProps } from 'next/app'
-import '../styles/globals.css'
+import "../styles/globals.css";
 
-function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+import type { AppProps } from "next/app";
+import Head from "next/head";
 
-export default App
+const App = (props: AppProps) => {
+  return (
+    <>
+      <Head>
+        <title>nexst</title>
+      </Head>
+      <props.Component {...props.pageProps} />
+    </>
+  );
+};
+
+export default App;
