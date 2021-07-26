@@ -4,3 +4,5 @@
 - TypeScript
 - Jest
 - Tailwind CSS
+- ESLint
+- Prettier
