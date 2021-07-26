@@ -14,3 +14,4 @@ it("Should render title text", () => {
   ).toBeInTheDocument();
   expect(screen.getByText("Check Pull Request!")).toBeInTheDocument();
 });
+
