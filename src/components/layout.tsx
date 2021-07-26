@@ -6,7 +6,9 @@ export const Layout: VFC<{ children: ReactNode }> = (props) => {
   return (
     <div>
       <Header />
-      <main>{props.children}</main>
+      <main className="flex flex-col flex-1 justify-center items-center px-20 w-full text-center">
+        {props.children}
+      </main>
       <Footer />
     </div>
   );
