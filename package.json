@@ -17,7 +17,7 @@
       "<rootDir>/node_modules/"
     ],
     "moduleNameMapper": {
-      "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
+      "src(.*)$": "<rootDir>/src/$1"
     }
   },
   "babel": {
