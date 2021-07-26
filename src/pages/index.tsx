@@ -1,22 +1,12 @@
-import Head from "next/head";
+import type { NextPage } from "next";
+import { Layout } from "src/components/layout";
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <div>
-      <Head>
-        <title>Next.js Starter Template</title>
-        <meta
-          name="description"
-          content="This is Next.js Starter Template by kijikunnn"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1>This is Next.js Starter Template</h1>
-      </main>
-
-      <footer></footer>
-    </div>
+    <Layout>
+      <h1>This is Next.js Starter Template</h1>
+    </Layout>
   );
-}
+};
+
+export default Home;
