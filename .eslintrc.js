@@ -70,6 +70,15 @@ module.exports = {
         filter: { regex: "^_", match: false },
       },
     ],
+    "jsx-a11y/no-autofocus": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        components: ["Link"],
+        specialLink: ["hrefLeft", "hrefRight"],
+        aspects: ["invalidHref", "preferButton"],
+      },
+    ],
   },
   overrides: [
     {
