@@ -7,7 +7,6 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:jsx-a11y/recommended",
     "plugin:tailwindcss/recommended",
     "next",
     "next/core-web-vitals",
@@ -68,15 +67,6 @@ module.exports = {
         format: ["PascalCase"],
         prefix: ["no", "is", "has", "should"],
         filter: { regex: "^_", match: false },
-      },
-    ],
-    "jsx-a11y/no-autofocus": "off",
-    "jsx-a11y/anchor-is-valid": [
-      "error",
-      {
-        components: ["Link"],
-        specialLink: ["hrefLeft", "hrefRight"],
-        aspects: ["invalidHref", "preferButton"],
       },
     ],
   },
