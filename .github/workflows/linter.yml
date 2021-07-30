@@ -20,4 +20,4 @@ jobs:
       - name: Lint
         run: yarn checks
       - name: Test
-        run: yarn test -u
+        run: yarn test
