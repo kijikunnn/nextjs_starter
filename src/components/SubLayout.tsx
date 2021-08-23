@@ -8,7 +8,7 @@ export const SubLayout: VFC<{ children: ReactNode }> = (props) => {
       <Header />
       <main className=" px-20 text-center">{props.children}</main>
       <Footer />
-      <p> SubLayout</p>
+      <p>SubLayout</p>
     </div>
   );
 };
