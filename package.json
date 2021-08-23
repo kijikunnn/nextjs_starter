@@ -8,7 +8,7 @@
     "start": "next start",
     "eslint": "eslint --fix --ext .jsx,.js,.tsx,.ts .",
     "lint": "next lint",
-    "test": "jest --env=jsdom --verbose -u",
+    "test": "jest --verbose -u",
     "checks": "yarn lint && yarn eslint"
   },
   "babel": {
