@@ -12,6 +12,4 @@ it("Should render title text", () => {
   expect(
     screen.getByText("This is Next.js Starter Template")
   ).toBeInTheDocument();
-  
 });
-

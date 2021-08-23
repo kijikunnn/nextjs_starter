@@ -4,12 +4,11 @@ import { Header } from "src/components/Header";
 
 export const Layout: VFC<{ children: ReactNode }> = (props) => {
   return (
-    <div>
+    <div className="flex flex-col items-center py-6 mx-auto w-full h-screen bg-blue-200">
       <Header />
-      <main className="flex flex-col flex-1 justify-center items-center px-20 w-full text-center">
-        {props.children}
-      </main>
+      <main className="px-20 text-center">{props.children}</main>
       <Footer />
+      <p>Layout</p>
     </div>
   );
 };
