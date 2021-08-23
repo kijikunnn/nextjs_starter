@@ -16,6 +16,12 @@
       "next/babel"
     ]
   },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  },
   "dependencies": {
     "next": "11.0.1",
     "react": "17.0.2",
