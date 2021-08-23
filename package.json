@@ -8,16 +8,13 @@
     "start": "next start",
     "eslint": "eslint --fix --ext .jsx,.js,.tsx,.ts .",
     "lint": "next lint",
-    "test": "jest --verbose",
+    "test": "jest",
     "checks": "yarn lint && yarn eslint"
   },
   "babel": {
     "presets": [
       "next/babel"
     ]
-  },
-  "compilerOptions": {
-    "rootDir": "."
   },
   "postcss": {
     "plugins": {
